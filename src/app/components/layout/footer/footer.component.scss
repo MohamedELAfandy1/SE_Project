@@ -1,0 +1,21 @@
+.fotter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    padding: 40px 0;
+    color: white;
+    height: 42vh;
+    h1{
+        font-size: 30px;
+        width: 500px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }   
+    &.light{
+    background-color: white;
+    color: black;
+
+    }
+}

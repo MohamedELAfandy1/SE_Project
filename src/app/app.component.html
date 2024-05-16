@@ -1,0 +1,5 @@
+<app-header (theme)="darkMode=$event"></app-header>
+<div class="page" [class.light]="!darkMode">
+<router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
