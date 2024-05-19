@@ -1,0 +1,26 @@
+<div class="Create"  [class.light]="!darkmode">
+    <div class="title">
+        <h2>Create A New Article</h2>
+    </div>
+    <form action="" [formGroup]="createArticleForm" (submit)="createArticle()">
+        <div>
+        <input type="text" placeholder="title" formControlName="title">
+    </div>
+    <div class="tag">
+        <input type="text" placeholder="tags" formControlName="tags" #tag>
+        <button class="addtag" type="button" (click)="addTag()">add</button>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+        <label for="selectImg"><p class="selectImg">Select An Image</p></label>
+
+        <input type="file" id="selectImg" (change)="putImg($event)" style="display: none;">
+
+    </div>
+        <textarea name="" id="" placeholder="description" formControlName="description"></textarea>
+        <button type="submit" [disabled]="createArticleForm.invalid">Create</button>
+    </form>
+</div>
