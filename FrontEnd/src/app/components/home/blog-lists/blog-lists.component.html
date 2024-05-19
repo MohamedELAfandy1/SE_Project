@@ -1,0 +1,18 @@
+<section class="bloglist">
+    <div class="title"><h3>Recent Posts</h3></div>
+    <div class="articles">
+        <div class="article" *ngFor="let article of articles">
+            <img [src]="article.img" alt="">
+            <div class="articlecontent">
+                <div class="date"><i class="fa-regular fa-calendar"></i> <p>may 25 , 2022</p></div>
+                <div class="title">
+                    <h4><a href="" routerLink="/details/{{article?.id}}">{{article.title}}</a></h4>
+                </div>
+                <div class="content">
+                    <p>{{article.description}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

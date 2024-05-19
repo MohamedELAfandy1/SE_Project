@@ -1,0 +1,11 @@
+.home{
+    background-color: var(--surface);
+    margin: 0 50px ;
+    border-radius: 20px;
+    color: white;
+    &.light{
+        background-color: var(--on-surface);
+        color: black;
+    }
+
+}
